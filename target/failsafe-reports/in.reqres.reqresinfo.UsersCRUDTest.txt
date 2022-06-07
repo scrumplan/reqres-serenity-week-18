@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: in.reqres.reqresinfo.UsersCRUDTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 2, Skipped: 0, Time elapsed: 6.401 sec <<< FAILURE! - in in.reqres.reqresinfo.UsersCRUDTest
+test002(in.reqres.reqresinfo.UsersCRUDTest)  Time elapsed: 0.207 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: map containing [ANYTHING->"morpheus86071"]
+     but: map was [<per_page=6>, <total=12>, <data=[{color=#98B2D1, year=2000, name=cerulean, id=1, pantone_value=15-4020}, {color=#C74375, year=2001, name=fuchsia rose, id=2, pantone_value=17-2031}, {color=#BF1932, year=2002, name=true red, id=3, pantone_value=19-1664}, {color=#7BC4C4, year=2003, name=aqua sky, id=4, pantone_value=14-4811}, {color=#E2583E, year=2004, name=tigerlily, id=5, pantone_value=17-1456}, {color=#53B0AE, year=2005, name=blue turquoise, id=6, pantone_value=15-5217}]>, <page=1>, <total_pages=2>, <support={text=To keep ReqRes free, contributions towards server costs are appreciated!, url=https://reqres.in/#support-heading}>]
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at in.reqres.reqresinfo.UsersCRUDTest.test002(UsersCRUDTest.java:43)
+
+test004(in.reqres.reqresinfo.UsersCRUDTest)  Time elapsed: 0.032 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)
+	at in.reqres.reqresinfo.UsersCRUDTest.test004(UsersCRUDTest.java:60)
+
+test005(in.reqres.reqresinfo.UsersCRUDTest)  Time elapsed: 0.031 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at io.restassured.internal.print.ResponsePrinter.print(ResponsePrinter.java:46)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:423)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:419)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.logResponse(ValidatableResponseOptionsImpl.java:415)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.all(ValidatableResponseOptionsImpl.java:371)
+	at in.reqres.reqresinfo.UsersCRUDTest.test005(UsersCRUDTest.java:69)
+

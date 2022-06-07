@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Users CRUD test","Verify is User is added or not","FAILURE","2022-06-05T19:35:32.807+01:00[Europe/London]","0.0","0.22"
+"Users CRUD test","This will update a user by PUT","ERROR","2022-06-05T19:35:33.208+01:00[Europe/London]","0.0","0.03"
+"Users CRUD test","This will update a user by Patch","ERROR","2022-06-05T19:35:33.311+01:00[Europe/London]","0.0","0.03"
